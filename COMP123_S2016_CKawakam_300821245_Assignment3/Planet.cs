@@ -147,15 +147,16 @@ namespace COMP123_S2016_CKawakam_300821245_Assignment3
         }//close RorationPeriod
 
         //CONSTRUCTOR+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-        
+
         /**
          * <summary>
          * This is constructor that takes name , diameter,and mass as parameters and passes
          * it to the _name, _diameter, _mass private instance variable.
          * </summary>
-         * 
+         * @constructor:Planet
+         * @params:{string}name,{double}diameter,{double}mass
          */
-         public Planet (string name,double diameter,double mass)
+        public Planet (string name,double diameter,double mass)
         {
             this._name = name;
             this._diameter = diameter;
