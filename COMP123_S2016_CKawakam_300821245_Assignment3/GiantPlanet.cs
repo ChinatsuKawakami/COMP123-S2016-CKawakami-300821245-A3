@@ -7,7 +7,7 @@ namespace COMP123_S2016_CKawakam_300821245_Assignment3
 {
     /**
      *<summary>
-     *This is the GiantPlanet class that extends form Planet(abstruct)
+     *This is the GiantPlanet class that extends form Planet(abstract)
      * </summary>
      *@class GiantPlanet 
      *@param
