@@ -11,7 +11,7 @@ using System.Threading.Tasks;
  * Student ID:300821245
  * Description:This program calls instance variables from Planet(abstract class),GiantPlanet,and TerrestrialPlanet class
  * and print ToString of GiantPlanet,ToString of TerrestrialPlanet, interface of IHasRings,IHasMoons,and IHabitable.
- * version:0.0.3-Added Planet abstruct class and added fields and public properties in it.
+ * version:0.0.4-Added constructor and ToString Method in Planet Class.
  */
 namespace COMP123_S2016_CKawakam_300821245_Assignment3
 {

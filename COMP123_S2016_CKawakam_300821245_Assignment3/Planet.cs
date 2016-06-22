@@ -5,9 +5,17 @@ using System.Text;
 
 namespace COMP123_S2016_CKawakam_300821245_Assignment3
 {
+    /**
+     *<summary>
+     *This is the Planet class (abstruct)
+     * </summary>
+     *@class Planet 
+     *@param
+     *@_diameter{double},_mass{double},_moonCount{int},_name{string},_orbitalPeriod{double},_ringCount{int},_rorationPeriod{double}
+     */
     public abstract class Planet
     {
-       //Private Fields+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+       //PRIVATE INSTANCE VARIABLES+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         private double _diameter;//readonly
         private double _mass;//readon;y
         private int _moonCount;
@@ -16,7 +24,14 @@ namespace COMP123_S2016_CKawakam_300821245_Assignment3
         private int _ringCount;
         private double _rotationPeriod;
 
-        //PUBLIC PROPETIES+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        //PUBLIC INSTANCE PROPETIES+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+       
+        /**
+         * <summary>
+         * This is a property for our _diameter field
+         * </summary>
+         * @propety{double} Diameter
+         */
         public double Diameter//ReadOnly
         {
             get
@@ -25,6 +40,13 @@ namespace COMP123_S2016_CKawakam_300821245_Assignment3
             }
         }//close Diameter
 
+
+        /**
+         * <summary>
+         * This is a property for our _mass field
+         * </summary>
+         * @propety{double} Mass
+         */
         public double Mass // ReadOnly
         {
             get
@@ -33,6 +55,13 @@ namespace COMP123_S2016_CKawakam_300821245_Assignment3
             }
         }//close Mass
 
+
+        /**
+         * <summary>
+         * This is a property for our _moonCount field
+         * </summary>
+         * @propety{int} Diameter
+         */
         public int MoonCount
         {
             get
@@ -45,6 +74,13 @@ namespace COMP123_S2016_CKawakam_300821245_Assignment3
             }
         }//close MoonCount
 
+
+        /**
+         * <summary>
+         * This is a property for our _name field
+         * </summary>
+         * @propety{string} Name
+         */
         public string Name // ReadOnly
         {
             get
@@ -53,6 +89,12 @@ namespace COMP123_S2016_CKawakam_300821245_Assignment3
             }
         }//close Name
 
+        /**
+         * <summary>
+         * This is a property for our _orbitalPeriod field
+         * </summary>
+         * @propety{double} OrbitalPeriod
+         */
         public double OrbitalPeriod
         {
             get
@@ -65,6 +107,13 @@ namespace COMP123_S2016_CKawakam_300821245_Assignment3
             }
         }//close OrbitalPeriod
 
+
+        /**
+         * <summary>
+         * This is a property for our _ringCount field
+         * </summary>
+         * @propety{int} RingCount
+         */
         public int RingCount
         {
             get
@@ -78,6 +127,13 @@ namespace COMP123_S2016_CKawakam_300821245_Assignment3
 
         }//close RingCount
 
+
+        /**
+         * <summary>
+         * This is a property for our _rotationPeriod field
+         * </summary>
+         * @propety{double} RotationPeriod
+         */
         public double RotationPeriod
         {
             get
@@ -90,6 +146,33 @@ namespace COMP123_S2016_CKawakam_300821245_Assignment3
             }
         }//close RorationPeriod
 
-
+        //CONSTRUCTOR+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        
+        /**
+         * <summary>
+         * This is constructor that takes name , diameter,and mass as parameters and passes
+         * it to the _name, _diameter, _mass private instance variable.
+         * </summary>
+         * 
+         */
+         public Planet (string name,double diameter,double mass)
+        {
+            this._name = name;
+            this._diameter = diameter;
+            this._mass = mass;
+        }
+       /**
+        * <summary>
+        * This is ToString Method to console Name, Diameter,and Mass
+        * </summary>
+        * @Method: ToString
+        * @param:{string}
+        * @returns {string}
+        */
+         public override string ToString()
+         {
+             string str = String.Format("+++++++++++++++++++++++++++++++\n +Name:" + this.Name + "\n+Diameter:" + this.Diameter + "\n+Mass:" + this.Mass + "\n+++++++++++++++++++++++++++++++");
+             return str;
+         }
     }
 }
