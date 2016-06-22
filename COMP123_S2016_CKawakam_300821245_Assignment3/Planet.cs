@@ -172,7 +172,7 @@ namespace COMP123_S2016_CKawakam_300821245_Assignment3
         */
          public override string ToString()
          {
-             string str = String.Format("+++++++++++++++++++++++++++++++\n +Name:" + this.Name + "\n+Diameter:" + this.Diameter + "\n+Mass:" + this.Mass + "\n+++++++++++++++++++++++++++++++");
+             string str = String.Format("+++++++++++++++++++++++++++++++\n+Name:" + this.Name + "\n+Diameter:" + this.Diameter + "\n+Mass:" + this.Mass + "\n+++++++++++++++++++++++++++++++");
              return str;
          }
     }
